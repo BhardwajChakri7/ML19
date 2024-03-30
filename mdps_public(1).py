@@ -64,7 +64,6 @@ with col1:
  
 # code for Prediction
 heart_diagnosis = ''
-bc=''
 
 # creating a button for Prediction
 
@@ -73,9 +72,7 @@ if st.button('Heart Disease Test Result'):
     
     if (heart_prediction[0] == 1):
       heart_diagnosis = 'The person is having heart disease'
-      bc='Basic medication :Carvedilol (Coreg), Nebivolol (Bystolic), and Metoprolol (Toprol)'
     else:
       heart_diagnosis = 'The person does not have any heart disease'
     
 st.success(heart_diagnosis)
-st.success(bc)
