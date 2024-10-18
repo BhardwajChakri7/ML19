@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun May  8 21:01:15 2022
-
-@author: bhardwaj
-"""
-
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -12,7 +5,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_diseases_model.sav', 'rb'))
 
 
 # page title
