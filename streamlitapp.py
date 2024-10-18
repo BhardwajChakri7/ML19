@@ -54,10 +54,8 @@ input[type="text"], input[type="number"], select {
     border: 1px solid #FF6347;
     border-radius: 5px;
     padding: 10px;
-    width: 100%;  /* Make the select box full width */
-}
-select {
-    height: 40px; /* Adjust height for consistency */
+    width: 100%;  /* Make the input box full width */
+    box-sizing: border-box;  /* Ensure padding is included in width */
 }
 </style>
 '''
