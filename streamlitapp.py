@@ -8,7 +8,7 @@ heart_disease_model = pickle.load(open('heart_diseases_model.sav', 'rb'))
 # Set page configuration
 st.set_page_config(page_title='Heart Disease Prediction', page_icon='❤️')
 
-# Add CSS for background image
+# Add CSS for background image and input styles
 page_bg_img = '''
 <style>
 [data-testid="stAppViewContainer"] {
@@ -47,6 +47,13 @@ page_bg_img = '''
 h1, h2, h3, h4, h5, h6, p {
     color: white;
     text-align: center;
+}
+input[type="text"], input[type="number"], select {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #FF6347;
+    border-radius: 5px;
+    padding: 10px;
 }
 </style>
 '''
