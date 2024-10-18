@@ -74,10 +74,10 @@ with col1:
     age = st.number_input('Age', min_value=1, max_value=120, value=30)
     
 with col2:
-    sex = st.selectbox('Sex', options=['0 = Female', '1 = Male'], index=1)
+    sex = st.selectbox('Sex', options=['Female', 'Male'], index=1)
     
 with col3:
-    cp = st.selectbox('Chest Pain types', options=['0 = Typical Angina', '1 = Atypical Angina', '2 = Non-Anginal Pain', '3 = Asymptomatic'], index=0)
+    cp = st.selectbox('Chest Pain types', options=[Typical Angina', Atypical Angina', Non-Anginal Pain', Asymptomatic'], index=0)
     
 with col1:
     trestbps = st.number_input('Resting Blood Pressure', min_value=0, max_value=200, value=120)
@@ -86,28 +86,28 @@ with col2:
     chol = st.number_input('Serum Cholestoral in mg/dl', min_value=0, max_value=600, value=200)
     
 with col3:
-    fbs = st.selectbox('Fasting Blood Sugar > 120 mg/dl', options=['0 = False', '1 = True'], index=0)
+    fbs = st.selectbox('Fasting Blood Sugar > 120 mg/dl', options=[False', True'], index=0)
     
 with col1:
-    restecg = st.selectbox('Resting Electrocardiographic results', options=['0 = Normal', '1 = Having ST-T wave abnormality', '2 = Showing probable or definite left ventricular hypertrophy'], index=0)
+    restecg = st.selectbox('Resting Electrocardiographic results', options=[Normal', Having ST-T wave abnormality', Showing probable or definite left ventricular hypertrophy'], index=0)
     
 with col2:
     thalach = st.number_input('Maximum Heart Rate achieved', min_value=60, max_value=220, value=150)
     
 with col3:
-    exang = st.selectbox('Exercise Induced Angina', options=['0 = No', '1 = Yes'], index=0)
+    exang = st.selectbox('Exercise Induced Angina', options=[No', Yes'], index=0)
     
 with col1:
     oldpeak = st.number_input('ST depression induced by exercise', min_value=0.0, max_value=10.0, value=1.0)
     
 with col2:
-    slope = st.selectbox('Slope of the peak exercise ST segment', options=['0 = Upsloping', '1 = Flat', '2 = Downsloping'], index=1)
+    slope = st.selectbox('Slope of the peak exercise ST segment', options=[Upsloping', Flat', Downsloping'], index=1)
     
 with col3:
     ca = st.number_input('Major vessels colored by flourosopy', min_value=0, max_value=4, value=0)
     
 with col1:
-    thal = st.selectbox('thal: 0 = normal; 1 = fixed defect; 2 = reversible defect', options=['0 = Normal', '1 = Fixed defect', '2 = Reversible defect'], index=0)
+    thal = st.selectbox('thal: 0 = normal; 1 = fixed defect; 2 = reversible defect', options=[Normal', Fixed defect', Reversible defect'], index=0)
 
 # code for Prediction
 heart_diagnosis = ''
