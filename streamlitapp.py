@@ -5,16 +5,7 @@ import numpy as np
 # Load the saved model
 heart_disease_model = pickle.load(open('heart_diseases_model.sav', 'rb'))
 
-page_bg_img = '''
-<style>
-    [data-testid="stAppViewContainer"] {
-        background-image: url("https://github.com/SHAIK-RAIYAN-2022-CSE/malaria/blob/main/Images-free-abstract-minimalist-wallpaper-HD.jpg?raw=true");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-</style>
-'''
+
 
 # Page title
 st.title('Heart Disease Prediction using ML')
