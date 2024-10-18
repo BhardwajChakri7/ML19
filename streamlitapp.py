@@ -55,7 +55,13 @@ input[type="text"], input[type="number"], select {
     border-radius: 5px;
     padding: 10px;
     width: 100%;  /* Make the input box full width */
-    box-sizing: border-box;  /* Ensure padding is included in width */
+    box-sizing: border-box;  /* Include padding in width */
+}
+select {
+    height: 40px; /* Adjust height for consistency */
+    -webkit-appearance: none; /* Remove default styling */
+    -moz-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
 }
 </style>
 '''
