@@ -5,7 +5,52 @@ import numpy as np
 # Load the saved model
 heart_disease_model = pickle.load(open('heart_diseases_model.sav', 'rb'))
 
+# Set page configuration
+st.set_page_config(page_title='Heart Disease Prediction', page_icon='❤️')
 
+# Add CSS for background image
+page_bg_img = '''
+<style>
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://raw.githubusercontent.com/SHAIK-RAIYAN-2022-CSE/malaria/main/Images-free-abstract-minimalist-wallpaper-HD.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+[data-testid="stHeader"] {
+    background: rgba(0, 0, 0, 0);
+}
+.block-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.8);
+}
+.stButton>button {
+    background-color: #FF6347;
+    color: white;
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+.stButton>button:hover {
+    background-color: white;
+    color: #FF6347;
+    border: 2px solid #FF6347;
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    text-align: center;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Page title
 st.title('Heart Disease Prediction using ML')
@@ -15,7 +60,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     age = st.number_input('Age', min_value=1, max_value=120, value=30)
-    trestbps = st.number_input('Resting Blood Pressure', min_value=50, max_value=200, value=120)
+    trestbps = st.number_input('Resting Blood Pressure', min_value=50, max_value=200, value=80)
     restecg = st.number_input('Resting ECG Results (0-2)', min_value=0, max_value=2, value=0)
     oldpeak = st.number_input('ST Depression by Exercise', min_value=0.0, max_value=10.0, value=1.0, step=0.1)
 
